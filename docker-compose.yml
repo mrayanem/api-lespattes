@@ -3,7 +3,7 @@ services:
   db:
     image: mysql:latest
     restart: always
-    container_name: mysql
+    container_name: db-api-lespattes
     ports:
       - "3306:3306"
     environment:

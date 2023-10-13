@@ -23,7 +23,7 @@ public class UserController {
 	}
 
 	@GetMapping("/{id}")
-	public ResponseEntity findUserById(@PathVariable String id) throws Exception {
+	public ResponseEntity<User> findUserById(@PathVariable String id) throws Exception {
 		var response = this.userService.findUserById(id);
 		return ResponseEntity.ok(response);
 	}
